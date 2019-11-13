@@ -13,20 +13,102 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+export default function Image() {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
+      comedyTime: file(relativePath: { eq: "comedy-time.jpg" }) {
+        ...imageFragment
+      }
+
+      frenchFriedComedyNight: file(
+        relativePath: { eq: "french-fried-comedy-night.jpg" }
+      ) {
+        ...imageFragment
+      }
+
+      jokeOrCroak: file(relativePath: { eq: "joke-or-croak.jpg" }) {
+        ...imageFragment
+      }
+
+      libertyEgalityComedy: file(
+        relativePath: { eq: "liberty-egality-comedy.jpg" }
+      ) {
+        ...imageFragment
+      }
+
+      theGreatBritishAmericanComedyNight: file(
+        relativePath: { eq: "the-great-british-american-comedy-night.jpg" }
+      ) {
+        ...imageFragment
+      }
+
+      wildOpenMic: file(relativePath: { eq: "wild-open-mic.jpg" }) {
+        ...imageFragment
+      }
+
+      comedyLab: file(relativePath: { eq: "comedy-lab.png" }) {
+        ...imageFragment
+      }
+
+      coucouComedy: file(relativePath: { eq: "coucou-comedy.png" }) {
+        ...imageFragment
+      }
+
+      theNewYorkComedyNight: file(
+        relativePath: { eq: "the-new-york-comedy-night.png" }
+      ) {
+        ...imageFragment
+      }
+    }
+
+    fragment imageFragment on File {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <>
+      <ComedyEvent
+        href="https://www.facebook.com/ComedyTimeBootlegBar/"
+        image={data.comedyTime}
+      />
+      <ComedyEvent
+        href="https://www.facebook.com/FFComedy/"
+        image={data.frenchFriedComedyNight}
+      />
+      <ComedyEvent
+        href="https://www.facebook.com/marieconnollycomedy/"
+        image={data.jokeOrCroak}
+      />
+      <ComedyEvent image={data.libertyEgalityComedy} />
+      <ComedyEvent
+        href="https://www.facebook.com/GBACN/"
+        image={data.theGreatBritishAmericanComedyNight}
+      />
+      <ComedyEvent
+        href="https://www.facebook.com/thewildopenmic/"
+        image={data.wildOpenMic}
+      />
+      <ComedyEvent
+        href="https://www.facebook.com/comedylabparis/"
+        image={data.comedyLab}
+      />
+      <ComedyEvent image={data.coucouComedy} />
+      <ComedyEvent image={data.theNewYorkComedyNight} />
+    </>
+  )
 }
 
-export default Image
+export function ComedyEvent({ href, image }) {
+  return (
+    <div style={{ maxWidth: "300px" }}>
+      <a href={href}>
+        <Img fluid={image.childImageSharp.fluid} />
+      </a>
+    </div>
+  )
+}
