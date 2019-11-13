@@ -10,12 +10,12 @@ export function ComedyEvent({ href, image, name, when, where, whereHref }) {
         </a>
       </div>
       <h3>{name}</h3>
-      <h5>
+      <h4>
         {when} at{" "}
         <a href={whereHref} target="_blank">
           {where}
         </a>
-      </h5>
+      </h4>
     </>
   )
 }
