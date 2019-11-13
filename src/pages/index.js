@@ -31,6 +31,7 @@ export default function IndexPage() {
         whereHref="https://goo.gl/maps/M6ZqtvqtzPT1wzqo9"
       />
       <ComedyEvent
+        href="https://www.facebook.com/coucoucomedy/"
         image={images.coucouComedy}
         name="Coucou Comedy"
         when="Every 3rd Tuesday 8:30pm - 10:30pm"
