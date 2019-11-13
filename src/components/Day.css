@@ -1,0 +1,9 @@
+.Day__Events {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -16px;
+}
+
+.Day__Events > * {
+  padding: 16px;
+}
