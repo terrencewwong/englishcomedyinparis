@@ -41,15 +41,21 @@
 
 .ComedyEvent h4 {
   font-size: 16px;
-  line-height: 28px;
   color: rgba(0, 0, 0, 0.6);
 }
 
+.ComedyEvent__When {
+  line-height: 28px;
+}
+
 .ComedyEvent__Where {
+  line-height: 48px;
+}
+.ComedyEvent__Where > a {
   display: inline-flex;
   align-items: center;
 }
-.ComedyEvent__Where > *:first-child {
+.ComedyEvent__Where a > *:first-child {
   margin-right: 4px;
 }
 
@@ -58,5 +64,5 @@
 }
 
 .ComedyEvent__Social > *:not(:last-child) {
-  margin-right: 4px;
+  margin-right: 16px;
 }

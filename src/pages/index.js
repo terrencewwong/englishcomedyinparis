@@ -52,6 +52,15 @@ export default function IndexPage() {
       </Day>
       <Day name="Thursday">
         <ComedyEvent
+          facebook="https://www.facebook.com/thecomedycroissant/"
+          instagram="https://www.instagram.com/thecomedycroissant/"
+          image={images.theComedyCroissant}
+          name="The Comedy Croissant Open Mic"
+          when="Thursdays 8:00pm - 10:00pm"
+          where="Aux Chiffons"
+          whereHref="https://goo.gl/maps/PHVLb5PFPoN5rcmw6"
+        />
+        <ComedyEvent
           image={images.oscarFunnyCrew}
           name="Oscar Funny Crew"
           when="Thursdays 9:30pm - 10:30pm"
@@ -165,6 +174,12 @@ function useImages() {
       }
 
       oscarFunnyCrew: file(relativePath: { eq: "oscar-funny-crew.jpg" }) {
+        ...imageFragment
+      }
+
+      theComedyCroissant: file(
+        relativePath: { eq: "the-comedy-croissant.png" }
+      ) {
         ...imageFragment
       }
     }
