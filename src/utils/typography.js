@@ -17,6 +17,10 @@ const typography = new Typography({
       name: "Lora",
       styles: ["400", "400i", "700", "700i"],
     },
+    {
+      name: "Raleway",
+      styles: ["400"],
+    },
   ],
 })
 

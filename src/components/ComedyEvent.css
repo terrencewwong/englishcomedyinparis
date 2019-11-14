@@ -1,0 +1,62 @@
+.ComedyEvent {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 528px) {
+  .ComedyEvent {
+    flex-direction: row;
+  }
+}
+.ComedyEvent:not(:first-child) {
+  border-top: none;
+}
+
+.ComedyEvent__Image {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 528px) {
+  .ComedyEvent__Image {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 528px) {
+  .ComedyEvent__Info {
+    margin-left: 16px;
+  }
+}
+
+.ComedyEvent h3,
+.ComedyEvent h4 {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+}
+
+.ComedyEvent h3 {
+  line-height: 32px;
+}
+
+.ComedyEvent h4 {
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ComedyEvent__Where {
+  display: inline-flex;
+  align-items: center;
+}
+.ComedyEvent__Where > *:first-child {
+  margin-right: 4px;
+}
+
+.ComedyEvent__Social {
+  display: flex;
+}
+
+.ComedyEvent__Social > *:not(:last-child) {
+  margin-right: 4px;
+}
