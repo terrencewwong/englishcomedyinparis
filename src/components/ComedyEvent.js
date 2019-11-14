@@ -32,11 +32,13 @@ export default function ComedyEvent({
           </a>
         </h4>
         <div className="ComedyEvent__Social">
-          <h4>
-            <a href={facebook} rel="noopener noreferrer" target="_blank">
-              <Facebook />
-            </a>
-          </h4>
+          {facebook && (
+            <h4>
+              <a href={facebook} rel="noopener noreferrer" target="_blank">
+                <Facebook />
+              </a>
+            </h4>
+          )}
           {instagram && (
             <h4>
               <a href={instagram} rel="noopener noreferrer" target="_blank">

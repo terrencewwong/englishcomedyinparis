@@ -50,7 +50,15 @@ export default function IndexPage() {
           whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
         />
       </Day>
-      <Day name="Thursday" />
+      <Day name="Thursday">
+        <ComedyEvent
+          image={images.oscarFunnyCrew}
+          name="Oscar Funny Crew"
+          when="Thursdays 9:30pm - 10:30pm"
+          where="Café Oscar"
+          whereHref="https://goo.gl/maps/cem3JcWbsjWxTnQN9"
+        />
+      </Day>
       <Day name="Friday">
         <ComedyEvent
           facebook="https://www.facebook.com/libertyegalitycomedy/"
@@ -153,6 +161,10 @@ function useImages() {
       theNewYorkComedyNight: file(
         relativePath: { eq: "the-new-york-comedy-night.png" }
       ) {
+        ...imageFragment
+      }
+
+      oscarFunnyCrew: file(relativePath: { eq: "oscar-funny-crew.jpg" }) {
         ...imageFragment
       }
     }
