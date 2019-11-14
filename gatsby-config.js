@@ -3,6 +3,7 @@ module.exports = {
     title: `English Comedy in Paris`,
     description: `Every English comedy event in Paris all in one place.`,
     author: `Terrence Wong`,
+    image: "/favicon.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
