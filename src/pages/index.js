@@ -165,7 +165,7 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/comedylabparis/"
           instagram="https://www.instagram.com/comedylabparis/"
           image={images.comedyLab}
-          when="Fridays 8:00pm - 9:30pm"
+          when="Saturdays 8:00pm - 9:30pm starting Nov. 30"
           name="Comedy Lab Generator"
           arrondissement={10}
           where="Generator Hostel"
