@@ -16,8 +16,9 @@ export default function IndexPage() {
         <ComedyEvent
           facebook="https://www.facebook.com/ComedyTimeBootlegBar/"
           image={images.comedyTime}
-          name="Comedy Time"
           when="Tuesdays 7:00pm - 8:30pm"
+          name="Comedy Time"
+          arrondissement={11}
           where="The Bootleg Bar"
           whereHref="https://goo.gl/maps/UHCmm5oLGAjNq7fT6"
           metro="Bastille"
@@ -26,8 +27,9 @@ export default function IndexPage() {
         <ComedyEvent
           facebook="https://www.facebook.com/FFComedy/"
           image={images.frenchFriedComedyNight}
-          name="French Fried Comedy Night"
           when="Tuesdays 9:15pm - 10:30pm"
+          name="French Fried Comedy Night"
+          arrondissement={11}
           where="The Art Café Paname"
           whereHref="https://goo.gl/maps/M6ZqtvqtzPT1wzqo9"
           metro="République"
@@ -37,8 +39,9 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/coucoucomedy/"
           instagram="https://www.instagram.com/coucoucomedy/"
           image={images.coucouComedy}
-          name="Coucou Comedy"
           when="Every 3rd Tuesday 8:30pm - 10:30pm"
+          name="Coucou Comedy"
+          arrondissement={6}
           where="The Highlander Scottish Pub"
           whereHref="https://goo.gl/maps/X9kU4FwoMjiT19478"
           metro="Saint-Michel Notre-Dame"
@@ -50,8 +53,9 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/comedylabparis/"
           instagram="https://www.instagram.com/comedylabparis/"
           image={images.comedyLab}
-          name="Comedy Lab Open Mic"
           when="Wednesdays 8:30pm - 10:30pm"
+          name="Comedy Lab Open Mic"
+          arrondissement={11}
           where="Au Chat Noir"
           whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
           metro="Parmentier"
@@ -63,8 +67,9 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/thecomedycroissant/"
           instagram="https://www.instagram.com/thecomedycroissant/"
           image={images.theComedyCroissant}
-          name="The Comedy Croissant Open Mic"
           when="Thursdays 8:00pm - 10:00pm"
+          name="The Comedy Croissant Open Mic"
+          arrondissement={18}
           where="Aux Chiffons"
           whereHref="https://goo.gl/maps/PHVLb5PFPoN5rcmw6"
           metro="Marcadet - Poissonniers"
@@ -72,8 +77,9 @@ export default function IndexPage() {
         />
         <ComedyEvent
           image={images.oscarFunnyCrew}
-          name="Oscar Funny Crew"
           when="Thursdays 9:30pm - 10:30pm"
+          name="Oscar Funny Crew"
+          arrondissement={2}
           where="Café Oscar"
           whereHref="https://goo.gl/maps/cem3JcWbsjWxTnQN9"
           metro="Grands Boulevards"
@@ -84,8 +90,9 @@ export default function IndexPage() {
         <ComedyEvent
           facebook="https://www.facebook.com/libertyegalitycomedy/"
           image={images.libertyEgalityComedy}
-          name="Liberty Egality Comedy"
           when="Fridays 8:30pm - 10:00pm"
+          name="Liberty Egality Comedy"
+          arrondissement={11}
           where="The Bootleg Bar"
           whereHref="https://goo.gl/maps/UHCmm5oLGAjNq7fT6"
           metro="Bastille"
@@ -95,8 +102,9 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/comedylabparis/"
           instagram="https://www.instagram.com/comedylabparis/"
           image={images.comedyLab}
-          name="Comedy Lab Comedy Show"
           when="Fridays 9:30pm - 11:00pm"
+          name="Comedy Lab Comedy Show"
+          arrondissement={11}
           where="Au Chat Noir"
           whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
           metro="Parmentier"
@@ -107,8 +115,9 @@ export default function IndexPage() {
         <ComedyEvent
           facebook="https://www.facebook.com/thewildopenmic/"
           image={images.wildOpenMic}
-          name="The Wild Open Mic"
           when="Saturdays 5:30pm - 6:30pm"
+          name="The Wild Open Mic"
+          arrondissement={13}
           where="Jardin Sauvage"
           whereHref="https://goo.gl/maps/3h46D6FzNkhveVxa6"
           metro="Gare d'Austerlitz"
@@ -117,8 +126,9 @@ export default function IndexPage() {
         <ComedyEvent
           facebook="https://www.facebook.com/marieconnollycomedy/"
           image={images.jokeOrCroak}
-          name="Joke Or Croak"
           when="Every Other Saturday 6:00pm - 7:00pm"
+          name="Joke Or Croak"
+          arrondissement={9}
           where="Le Sonart"
           whereHref="https://g.page/lesonartpigalle?share"
           metro="Pigalle"
@@ -127,8 +137,9 @@ export default function IndexPage() {
         <ComedyEvent
           facebook="https://www.facebook.com/GBACN/"
           image={images.theGreatBritishAmericanComedyNight}
-          name="The Great British American Comedy Night"
           when="Saturdays 7:00pm - 8:30pm"
+          name="The Great British American Comedy Night"
+          arrondissement={13}
           where="Jardin Sauvage"
           whereHref="https://goo.gl/maps/3h46D6FzNkhveVxa6"
           metro="Gare d'Austerlitz"
@@ -139,8 +150,9 @@ export default function IndexPage() {
         <ComedyEvent
           facebook="https://www.facebook.com/NewYorkComedyNight/"
           image={images.theNewYorkComedyNight}
-          name="The New York Comedy Night"
           when="Sundays 8:00pm - 9:30pm"
+          name="The New York Comedy Night"
+          arrondissement={18}
           where="Barbès Comedy Club"
           whereHref="https://goo.gl/maps/hQknbeoedkD54eFe6"
           metro="Château Rouge"

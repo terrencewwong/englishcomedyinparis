@@ -12,8 +12,9 @@ export default function ComedyEvent({
   facebook,
   instagram,
   image,
-  name,
   when,
+  name,
+  arrondissement,
   where,
   whereHref,
   metro,
@@ -36,6 +37,7 @@ export default function ComedyEvent({
 
         h3,
         h4 {
+          color: rgba(0, 0, 0, 0.6);
           font-family: Raleway, sans-serif;
           margin: 0;
         }
@@ -63,7 +65,7 @@ export default function ComedyEvent({
             color: rgba(0, 0, 0, 0.6);
             font-weight: bold;
             font-size: 20px;
-            line-height: 32px;
+            line-height: 24px;
           `}
         >
           {when}
@@ -75,6 +77,21 @@ export default function ComedyEvent({
           `}
         >
           {name}
+        </h4>
+        <h4
+          css={css`
+            margin-top: 16px !important;
+            font-size: 16px;
+            line-height: 16px;
+            display: inline-block;
+            /* background-color: #a9cce3; */
+            background-color: #eaf2f8;
+            padding: 4px 8px;
+            border-radius: 16px;
+          `}
+        >
+          {arrondissement}
+          <sup>e</sup> arrondissement
         </h4>
         <h4
           css={css`
@@ -104,7 +121,7 @@ export default function ComedyEvent({
           css={css`
             display: flex;
             align-items: center;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 20px;
 
             & > *:first-child {
