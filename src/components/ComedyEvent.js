@@ -20,9 +20,44 @@ export default function ComedyEvent({
   lines,
 }) {
   return (
-    <div className="ComedyEvent">
-      <Img fixed={image.childImageSharp.fixed} className="ComedyEvent__Image" />
-      <div className="ComedyEvent__Info">
+    <div
+      css={css`
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        @media screen and (min-width: 528px) {
+          flex-direction: row;
+        }
+        &::not(:first-child) {
+          border-top: none;
+        }
+
+        h3,
+        h4 {
+          font-family: Raleway, sans-serif;
+          margin: 0;
+        }
+      `}
+    >
+      <Img
+        fixed={image.childImageSharp.fixed}
+        css={css`
+          margin-bottom: 16px;
+
+          @media screen and (min-width: 528px) {
+            margin-bottom: 0;
+          }
+        `}
+      />
+      <div
+        css={css`
+          @media screen and (min-width: 528px) {
+            margin-left: 16px;
+          }
+        `}
+      >
         <h3
           css={css`
             color: rgba(0, 0, 0, 0.6);
