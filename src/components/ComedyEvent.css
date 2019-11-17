@@ -35,17 +35,14 @@
   margin: 0;
 }
 
-.ComedyEvent h3 {
-  line-height: 32px;
-}
-
-.ComedyEvent h4 {
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .ComedyEvent__When {
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.ComedyEvent__Name {
+  font-size: 28px;
+  line-height: 48px;
 }
 
 .ComedyEvent__Where {
@@ -56,7 +53,18 @@
   align-items: center;
 }
 .ComedyEvent__Where a > *:first-child {
-  margin-right: 4px;
+  margin-right: 8px;
+}
+
+.ComedyEvent__Metro {
+  color: rgba(0, 0, 0, 0.6);
+  display: inline-flex;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.ComedyEvent__Metro > *:first-child {
+  margin-right: 8px;
 }
 
 .ComedyEvent__Social {

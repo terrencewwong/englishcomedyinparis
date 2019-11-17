@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.56,
   headerFontFamily: ["Source Serif Pro", "serif"],
-  headerWeight: 600,
+  headerWeight: 400,
   bodyFontFamily: ["Lora", "serif"],
   bodyWeight: 400,
   boldWeight: 700,
@@ -19,7 +19,7 @@ const typography = new Typography({
     },
     {
       name: "Raleway",
-      styles: ["400"],
+      styles: ["400", "700"],
     },
   ],
 })

@@ -1,0 +1,19 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#6E491E;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="22" width="22" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1">
+   <g stroke="null" id="svg_2">
+    <circle stroke="null" id="svg_3" r="10.009011" cy="10.009011" cx="10.009011" class="st0"/>
+    <path stroke="null" id="svg_4" d="m8.398866,15.601002l0,-11.05343l-1.936526,0c-0.500451,0.391657 -1.69718,1.131453 -2.980945,1.740698l-0.652762,0.304622l0.761555,1.69718l0.587485,-0.304622c0.413416,-0.195828 1.52311,-0.783314 1.893009,-1.087936l0,8.681729l2.328183,0l0,0.021759z" class="st1"/>
+    <path stroke="null" id="svg_5" d="m15.078793,15.601002l0,-11.05343l-1.936526,0c-0.500451,0.391657 -1.69718,1.131453 -2.980945,1.740698l-0.67452,0.304622l0.761555,1.69718l0.587485,-0.304622c0.413416,-0.195828 1.52311,-0.783314 1.893009,-1.087936l0,8.681729l2.349942,0l0,0.021759z" class="st1"/>
+   </g>
+  </g>
+ </g>
+</svg>

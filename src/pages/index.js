@@ -20,6 +20,8 @@ export default function IndexPage() {
           when="Tuesdays 7:00pm - 8:30pm"
           where="The Bootleg Bar"
           whereHref="https://goo.gl/maps/UHCmm5oLGAjNq7fT6"
+          metro="Bastille"
+          lines={[1, 5, 8]}
         />
         <ComedyEvent
           facebook="https://www.facebook.com/FFComedy/"
@@ -28,6 +30,8 @@ export default function IndexPage() {
           when="Tuesdays 9:15pm - 10:30pm"
           where="The Art Café Paname"
           whereHref="https://goo.gl/maps/M6ZqtvqtzPT1wzqo9"
+          metro="République"
+          lines={[3, 5, 8, 9, 11]}
         />
         <ComedyEvent
           facebook="https://www.facebook.com/coucoucomedy/"
@@ -37,6 +41,8 @@ export default function IndexPage() {
           when="Every 3rd Tuesday 8:30pm - 10:30pm"
           where="The Highlander Scottish Pub"
           whereHref="https://goo.gl/maps/X9kU4FwoMjiT19478"
+          metro="Saint-Michel Notre-Dame"
+          lines={[4]}
         />
       </Day>
       <Day name="Wednesday">
@@ -48,6 +54,8 @@ export default function IndexPage() {
           when="Wednesdays 8:30pm - 10:30pm"
           where="Au Chat Noir"
           whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
+          metro="Parmentier"
+          lines={[3]}
         />
       </Day>
       <Day name="Thursday">
@@ -59,6 +67,8 @@ export default function IndexPage() {
           when="Thursdays 8:00pm - 10:00pm"
           where="Aux Chiffons"
           whereHref="https://goo.gl/maps/PHVLb5PFPoN5rcmw6"
+          metro="Marcadet - Poissonniers"
+          lines={[4, 12]}
         />
         <ComedyEvent
           image={images.oscarFunnyCrew}
@@ -66,6 +76,8 @@ export default function IndexPage() {
           when="Thursdays 9:30pm - 10:30pm"
           where="Café Oscar"
           whereHref="https://goo.gl/maps/cem3JcWbsjWxTnQN9"
+          metro="Grands Boulevards"
+          lines={[8, 9]}
         />
       </Day>
       <Day name="Friday">
@@ -76,6 +88,8 @@ export default function IndexPage() {
           when="Fridays 8:30pm - 10:00pm"
           where="The Bootleg Bar"
           whereHref="https://goo.gl/maps/UHCmm5oLGAjNq7fT6"
+          metro="Bastille"
+          lines={[1, 5, 8]}
         />
         <ComedyEvent
           facebook="https://www.facebook.com/comedylabparis/"
@@ -85,6 +99,8 @@ export default function IndexPage() {
           when="Fridays 9:30pm - 11:00pm"
           where="Au Chat Noir"
           whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
+          metro="Parmentier"
+          lines={[3]}
         />
       </Day>
       <Day name="Saturday">
@@ -95,6 +111,8 @@ export default function IndexPage() {
           when="Saturdays 5:30pm - 6:30pm"
           where="Jardin Sauvage"
           whereHref="https://goo.gl/maps/3h46D6FzNkhveVxa6"
+          metro="Gare d'Austerlitz"
+          lines={[5, 10]}
         />
         <ComedyEvent
           facebook="https://www.facebook.com/marieconnollycomedy/"
@@ -103,6 +121,8 @@ export default function IndexPage() {
           when="Every Other Saturday 6:00pm - 7:00pm"
           where="Le Sonart"
           whereHref="https://g.page/lesonartpigalle?share"
+          metro="Pigalle"
+          lines={[2, 12]}
         />
         <ComedyEvent
           facebook="https://www.facebook.com/GBACN/"
@@ -111,6 +131,8 @@ export default function IndexPage() {
           when="Saturdays 7:00pm - 8:30pm"
           where="Jardin Sauvage"
           whereHref="https://goo.gl/maps/3h46D6FzNkhveVxa6"
+          metro="Gare d'Austerlitz"
+          lines={[5, 10]}
         />
       </Day>
       <Day name="Sunday">
@@ -121,6 +143,8 @@ export default function IndexPage() {
           when="Sundays 8:00pm - 9:30pm"
           where="Barbès Comedy Club"
           whereHref="https://goo.gl/maps/hQknbeoedkD54eFe6"
+          metro="Château Rouge"
+          lines={[4]}
         />
       </Day>
     </Layout>

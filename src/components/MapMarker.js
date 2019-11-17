@@ -2,19 +2,14 @@ import React from "react"
 
 export default function MapMarker(props) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      {...props}
-      style={{
-        width: "1em",
-        height: "1em",
-        ...(props.style || {}),
-      }}
-    >
-      <path
-        fill="currentColor"
-        d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5z"
-      />
+    <svg width={14} height={20} {...props}>
+      <path fill="none" d="M-1-1h16v22H-1z" />
+      <g>
+        <path
+          fill="currentColor"
+          d="M7 4.5A2.5 2.5 0 0 1 9.5 7 2.5 2.5 0 0 1 7 9.5 2.5 2.5 0 0 1 4.5 7 2.5 2.5 0 0 1 7 4.5M7 0a7 7 0 0 1 7 7c0 5.25-7 13-7 13S0 12.25 0 7a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C12 10 12 8 12 7a5 5 0 0 0-5-5z"
+        />
+      </g>
     </svg>
   )
 }
