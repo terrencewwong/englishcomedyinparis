@@ -223,7 +223,7 @@ function useImages() {
 
     fragment imageFragment on File {
       childImageSharp {
-        fixed(width: 160) {
+        fixed(width: 192) {
           ...GatsbyImageSharpFixed
         }
       }
