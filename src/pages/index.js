@@ -71,7 +71,6 @@ export default function IndexPage() {
       <Day name="Friday">
         <ComedyEvent
           facebook="https://www.facebook.com/libertyegalitycomedy/"
-          instagram="https://www.instagram.com/comedylabparis/"
           image={images.libertyEgalityComedy}
           name="Liberty Egality Comedy"
           when="Fridays 8:30pm - 10:00pm"
@@ -80,6 +79,7 @@ export default function IndexPage() {
         />
         <ComedyEvent
           facebook="https://www.facebook.com/comedylabparis/"
+          instagram="https://www.instagram.com/comedylabparis/"
           image={images.comedyLab}
           name="Comedy Lab Comedy Show"
           when="Fridays 9:30pm - 11:00pm"
