@@ -113,7 +113,7 @@ export default function IndexPage() {
       </Day>
       <Day name="Saturday">
         <ComedyEvent
-          facebook="https://www.facebook.com/thewildopenmic/"
+          facebook="https://www.facebook.com/wildopenmic/"
           image={images.wildOpenMic}
           when="Saturdays 5:30pm - 6:30pm"
           name="The Wild Open Mic"
@@ -138,7 +138,7 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/GBACN/"
           image={images.theGreatBritishAmericanComedyNight}
           when="Saturdays 7:00pm - 8:30pm"
-          name="The Great British American Comedy Night"
+          name="Great British American Comedy Night"
           arrondissement={13}
           where="Jardin Sauvage"
           whereHref="https://goo.gl/maps/3h46D6FzNkhveVxa6"
@@ -223,7 +223,7 @@ function useImages() {
 
     fragment imageFragment on File {
       childImageSharp {
-        fixed(width: 192) {
+        fixed(width: 256) {
           ...GatsbyImageSharpFixed
         }
       }

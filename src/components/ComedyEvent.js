@@ -52,6 +52,7 @@ export default function ComedyEvent({
         fixed={image.childImageSharp.fixed}
         css={css`
           margin-bottom: 16px;
+          flex-shrink: 0;
 
           @media screen and (min-width: 528px) {
             margin-bottom: 0;
@@ -81,7 +82,7 @@ export default function ComedyEvent({
             line-height: 48px;
 
             &:hover {
-              text-decoration: underline;
+              text-decoration: ${facebook ? "underline" : "none"};
             }
           `}
         >
@@ -159,19 +160,53 @@ export default function ComedyEvent({
             {metro}
           </span>
         </h4>
-        {/* <div className="ComedyEvent__Social">
-          {facebook && (
-            <a href={facebook} rel="noopener noreferrer" target="_blank">
-              <Facebook style={{ width: "24px", height: "24px" }} />
-            </a>
-          )}
-          {instagram && (
-            <a href={instagram} rel="noopener noreferrer" target="_blank">
-              <Instagram style={{ width: "24px", height: "24px" }} />
-            </a>
-          )}
-        </div> */}
+        <div
+          css={css`
+            margin-top: 16px;
+            display: flex;
+            & > *:not(:last-child) {
+              margin-right: 16px;
+            }
+          `}
+        >
+          {facebook && <Social.Facebook href={facebook} />}
+          {instagram && <Social.Instagram href={instagram} />}
+        </div>
       </div>
     </a>
+  )
+}
+
+Social.Facebook = function SocialFacebook({ href }) {
+  return <Social href={href} name="Facebook" Icon={Facebook} />
+}
+Social.Instagram = function SocialInstagram({ href }) {
+  return <Social href={href} name="Instagram" Icon={Instagram} />
+}
+function Social({ href, name, Icon }) {
+  return (
+    <h4>
+      <a
+        href={href}
+        css={css`
+          display: inline-flex;
+          align-items: center;
+          font-size: 15px;
+          line-height: 48px;
+          text-decoration: none;
+
+          & > span {
+            margin-left: 4px;
+          }
+
+          &:hover {
+            color: rgba(0, 0, 0, 0.4);
+          }
+        `}
+      >
+        <Icon />
+        <span>{name}</span>
+      </a>
+    </h4>
   )
 }

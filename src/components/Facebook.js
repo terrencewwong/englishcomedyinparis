@@ -1,20 +1,15 @@
 import React from "react"
 
-export default function Facebook(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      {...props}
-      style={{
-        width: "1em",
-        height: "1em",
-        ...(props.style || {}),
-      }}
-    >
+const SvgFacebook = props => (
+  <svg width={18} height={18} {...props}>
+    <path fill="none" d="M-1-1h20v20H-1z" />
+    <g>
       <path
         fill="currentColor"
-        d="M17 2v4h-2c-.69 0-1 .81-1 1.5V10h3v4h-3v8h-4v-8H7v-4h3V6a4 4 0 0 1 4-4h3z"
+        d="M2 0h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 9 5.5V8H7v3h2v7h3v-7h3V8h-3V6a1 1 0 0 1 1-1h2V2z"
       />
-    </svg>
-  )
-}
+    </g>
+  </svg>
+)
+
+export default SvgFacebook
