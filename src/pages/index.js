@@ -70,7 +70,7 @@ export default function IndexPage() {
           when="Thursdays 8:00pm - 10:00pm"
           name="The Comedy Croissant Open Mic"
           arrondissement={18}
-          where="Aux Chiffons"
+          where={<>Aux&nbsp;Chiffons</>}
           whereHref="https://goo.gl/maps/PHVLb5PFPoN5rcmw6"
           metro="Marcadet - Poissonniers"
           lines={[4, 12]}

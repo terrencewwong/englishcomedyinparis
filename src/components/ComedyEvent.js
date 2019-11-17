@@ -152,13 +152,13 @@ export default function ComedyEvent({
               <Metro line={line} />
             ))}
           </div>
-          <span
+          <div
             css={css`
               color: rgba(0, 0, 0, 0.6);
             `}
           >
             {metro}
-          </span>
+          </div>
         </h4>
         <div
           css={css`
