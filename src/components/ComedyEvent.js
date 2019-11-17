@@ -30,7 +30,7 @@ export default function ComedyEvent({
         @media screen and (min-width: 528px) {
           flex-direction: row;
         }
-        &::not(:first-child) {
+        &:not(:first-child) {
           border-top: none;
         }
 
