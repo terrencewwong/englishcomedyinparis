@@ -17,6 +17,7 @@ export default function ComedyEvent({
   arrondissement,
   where,
   whereHref,
+  metros,
   metro,
   lines,
 }) {
@@ -127,39 +128,21 @@ export default function ComedyEvent({
             <span>{where}</span>
           </a>
         </h4>
-        <h4
-          css={css`
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            line-height: 20px;
-
-            & > *:first-child {
-              margin-right: 8px;
-            }
-          `}
-        >
+        {metros ? (
           <div
             css={css`
-              height: 20px;
               & > *:not(:last-child) {
-                margin-right: 4px;
+                margin-bottom: 4px;
               }
             `}
           >
-            <MetroM20px />
-            {lines.map(line => (
-              <Metro line={line} />
+            {metros.map(metro => (
+              <MetroStation {...metro} />
             ))}
           </div>
-          <div
-            css={css`
-              color: rgba(0, 0, 0, 0.6);
-            `}
-          >
-            {metro}
-          </div>
-        </h4>
+        ) : (
+          <MetroStation name={metro} lines={lines} />
+        )}
         <div
           css={css`
             margin-top: 16px;
@@ -207,6 +190,44 @@ function Social({ href, name, Icon }) {
         <Icon />
         <span>{name}</span>
       </a>
+    </h4>
+  )
+}
+
+function MetroStation({ name, lines }) {
+  return (
+    <h4
+      css={css`
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 20px;
+
+        & > *:first-child {
+          margin-right: 8px;
+        }
+      `}
+    >
+      <div
+        css={css`
+          height: 20px;
+          & > *:not(:last-child) {
+            margin-right: 4px;
+          }
+        `}
+      >
+        <MetroM20px />
+        {lines.map(line => (
+          <Metro line={line} />
+        ))}
+      </div>
+      <div
+        css={css`
+          color: rgba(0, 0, 0, 0.6);
+        `}
+      >
+        {name}
+      </div>
     </h4>
   )
 }

@@ -58,8 +58,16 @@ export default function IndexPage() {
           arrondissement={11}
           where="Au Chat Noir"
           whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
-          metro="Parmentier"
-          lines={[3]}
+          metros={[
+            {
+              name: "Parmentier",
+              lines: [3],
+            },
+            {
+              name: "Couronnes",
+              lines: [2],
+            },
+          ]}
         />
       </Day>
       <Day name="Thursday">
@@ -107,8 +115,16 @@ export default function IndexPage() {
           arrondissement={11}
           where="Au Chat Noir"
           whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
-          metro="Parmentier"
-          lines={[3]}
+          metros={[
+            {
+              name: "Parmentier",
+              lines: [3],
+            },
+            {
+              name: "Couronnes",
+              lines: [2],
+            },
+          ]}
         />
       </Day>
       <Day name="Saturday">
