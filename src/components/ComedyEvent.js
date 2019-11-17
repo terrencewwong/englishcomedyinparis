@@ -21,13 +21,15 @@ export default function ComedyEvent({
   lines,
 }) {
   return (
-    <div
+    <a
       css={css`
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         padding: 16px;
         border: 1px solid rgba(0, 0, 0, 0.12);
+        text-decoration: none;
+
         @media screen and (min-width: 528px) {
           flex-direction: row;
         }
@@ -42,6 +44,9 @@ export default function ComedyEvent({
           margin: 0;
         }
       `}
+      rel="noopener noreferrer"
+      target="_blank"
+      href={facebook}
     >
       <Img
         fixed={image.childImageSharp.fixed}
@@ -74,6 +79,10 @@ export default function ComedyEvent({
           css={css`
             font-size: 32px;
             line-height: 48px;
+
+            &:hover {
+              text-decoration: underline;
+            }
           `}
         >
           {name}
@@ -163,6 +172,6 @@ export default function ComedyEvent({
           )}
         </div> */}
       </div>
-    </div>
+    </a>
   )
 }
