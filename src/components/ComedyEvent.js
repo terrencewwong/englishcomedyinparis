@@ -22,7 +22,7 @@ export default function ComedyEvent({
   lines,
 }) {
   return (
-    <a
+    <div
       css={css`
         box-sizing: border-box;
         display: flex;
@@ -80,35 +80,26 @@ export default function ComedyEvent({
         <h4
           css={css`
             font-size: 32px;
-            line-height: 48px;
+            line-height: 36px;
+            margin-top: 8px !important;
+            margin-bottom: 24px !important;
 
-            &:hover {
-              text-decoration: ${facebook ? "underline" : "none"};
+            a {
+              text-decoration: none;
+              &:hover {
+                text-decoration: ${facebook ? "underline" : "none"};
+              }
             }
           `}
         >
-          {name}
+          <a href={facebook} rel="noopener noreferrer" target="_blank">
+            {name}
+          </a>
         </h4>
         <h4
           css={css`
-            margin-top: 16px !important;
-            font-size: 16px;
-            line-height: 16px;
-            display: inline-block;
-            /* background-color: #a9cce3; */
-            background-color: #eaf2f8;
-            padding: 4px 8px;
-            border-radius: 16px;
-          `}
-        >
-          {arrondissement}
-          <sup>e</sup> arrondissement
-        </h4>
-        <h4
-          css={css`
-            height: 48px;
-            font-size: 20px;
-            line-height: 48px;
+            font-size: 18px;
+            line-height: 28px;
             & > a {
               display: inline-flex;
               align-items: center;
@@ -143,6 +134,15 @@ export default function ComedyEvent({
         ) : (
           <MetroStation name={metro} lines={lines} />
         )}
+        <h4
+          css={css`
+            font-size: 18px;
+            line-height: 28px;
+          `}
+        >
+          {arrondissement}
+          <sup>e</sup> arrondissement
+        </h4>
         <div
           css={css`
             margin-top: 16px;
@@ -156,7 +156,7 @@ export default function ComedyEvent({
           {instagram && <Social.Instagram href={instagram} />}
         </div>
       </div>
-    </a>
+    </div>
   )
 }
 
@@ -174,8 +174,8 @@ function Social({ href, name, Icon }) {
         css={css`
           display: inline-flex;
           align-items: center;
-          font-size: 15px;
-          line-height: 48px;
+          font-size: 18px;
+          line-height: 28px;
           text-decoration: none;
 
           & > span {
@@ -201,7 +201,7 @@ function MetroStation({ name, lines }) {
         display: flex;
         align-items: center;
         font-size: 18px;
-        line-height: 20px;
+        line-height: 28px;
 
         & > *:first-child {
           margin-right: 8px;
