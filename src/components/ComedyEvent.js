@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { css } from "@emotion/core"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import MapMarker from "./MapMarker"
 import Facebook from "./Facebook"
 import Instagram from "./Instagram"
@@ -92,9 +93,13 @@ export default function ComedyEvent({
             }
           `}
         >
-          <a href={facebook} rel="noopener noreferrer" target="_blank">
+          <OutboundLink
+            href={facebook}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             {name}
-          </a>
+          </OutboundLink>
         </h4>
         <h4
           css={css`
@@ -114,10 +119,14 @@ export default function ComedyEvent({
             }
           `}
         >
-          <a href={whereHref} rel="noopener noreferrer" target="_blank">
+          <OutboundLink
+            href={whereHref}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <MapMarker style={{ color: "rgba(0, 0, 0, 0.6)" }} />
             <span>{where}</span>
-          </a>
+          </OutboundLink>
         </h4>
         {metros ? (
           <div
@@ -169,7 +178,7 @@ Social.Instagram = function SocialInstagram({ href }) {
 function Social({ href, name, Icon }) {
   return (
     <h4>
-      <a
+      <OutboundLink
         href={href}
         css={css`
           display: inline-flex;
@@ -189,7 +198,7 @@ function Social({ href, name, Icon }) {
       >
         <Icon />
         <span>{name}</span>
-      </a>
+      </OutboundLink>
     </h4>
   )
 }
