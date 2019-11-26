@@ -75,7 +75,7 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/thecomedycroissant/"
           instagram="https://www.instagram.com/thecomedycroissant/"
           image={images.theComedyCroissant}
-          when="Thursdays 8:00pm - 10:00pm"
+          when="Select Thursdays 8:00pm - 10:00pm next show Dec. 12"
           name="The Comedy Croissant Open Mic"
           arrondissement={18}
           where={<>Aux&nbsp;Chiffons</>}
