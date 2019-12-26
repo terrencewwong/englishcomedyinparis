@@ -26,10 +26,14 @@ export default function PerformInParisPage() {
         <div
           css={css`
             display: flex;
+            flex-wrap: wrap;
             margin-left: -16px;
             margin-right: -16px;
             & > div {
-              flex: 1;
+              width: 100%;
+              @media screen and (min-width: 624px) {
+                flex: 1;
+              }
               padding-left: 16px;
               padding-right: 16px;
             }
@@ -125,10 +129,10 @@ function Events(props) {
         }
 
         & > li:first-child {
-          margin-bottom: 8px;
+          margin-bottom: 16px;
         }
         & > li:not(:first-child) {
-          margin-bottom: 0;
+          margin-bottom: 8px;
         }
       `}
       {...props}
