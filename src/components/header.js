@@ -42,11 +42,12 @@ const Header = ({ fluid, siteTitle }) => (
           display: flex;
           margin-top: 16px;
           & > *:not(:last-child) {
-            margin-right: 16px;
+            margin-right: 32px;
           }
         `}
       >
         <NavLink to="/map">Map</NavLink>
+        <NavLink to="/perform-in-paris">Perform in Paris</NavLink>
       </nav>
     </div>
   </header>
