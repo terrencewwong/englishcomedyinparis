@@ -1,32 +1,53 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { css } from "@emotion/core"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ fluid, siteTitle }) => (
   <header
-    style={{
-      backgroundColor: "#5499C7",
-      marginBottom: `1.45rem`,
-    }}
+    css={css`
+      background-color: #5499c7;
+    `}
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 920,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      css={
+        fluid
+          ? css`
+              padding: 1.45rem 1.0875rem;
+            `
+          : css`
+              margin: 0 auto;
+              max-width: 920px;
+              padding: 1.45rem 1.0875rem;
+            `
+      }
     >
-      <h1 style={{ margin: 0 }}>
+      <h1
+        css={css`
+          margin: 0;
+        `}
+      >
         <Link
           to="/"
-          style={{
-            color: "white",
-            textDecoration: `none`,
-          }}
+          css={css`
+            color: white;
+            text-decoration: none;
+          `}
         >
           {siteTitle}
         </Link>
       </h1>
+      <nav
+        css={css`
+          display: flex;
+          margin-top: 16px;
+          & > *:not(:last-child) {
+            margin-right: 16px;
+          }
+        `}
+      >
+        <NavLink to="/map">Map</NavLink>
+      </nav>
     </div>
   </header>
 )
@@ -40,3 +61,19 @@ Header.defaultProps = {
 }
 
 export default Header
+
+function NavLink(props) {
+  return (
+    <Link
+      css={css`
+        color: white;
+        text-decoration: none;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+          text-decoration: underline;
+        }
+      `}
+      {...props}
+    />
+  )
+}

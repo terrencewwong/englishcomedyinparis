@@ -7,10 +7,11 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { css } from "@emotion/core"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
-const Layout = ({ children }) => {
+const Layout = ({ fluid, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,14 +24,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header fluid={fluid} siteTitle={data.site.siteMetadata.title} />
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 920,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
+        css={
+          fluid
+            ? ""
+            : css`
+                margin: 0 auto;
+                margin-top: 1.45rem;
+                max-width: 920px;
+                padding: 0px 1.0875rem 1.45rem;
+                padding-top: 0;
+              `
+        }
       >
         <main>{children}</main>
         <footer>{/* TODO: add a footer */}</footer>
@@ -40,6 +46,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
+  fluid: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 
