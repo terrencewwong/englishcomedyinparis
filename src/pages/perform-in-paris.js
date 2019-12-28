@@ -49,6 +49,9 @@ export default function PerformInParisPage() {
               <Events.ContactLink href="https://m.me/coucoucomedy">
                 Coucou Comedy
               </Events.ContactLink>
+              <Events.ContactLink href="https://m.me/funnymonkParis">
+                Funny Monk Comedy Show
+              </Events.ContactLink>
             </Events>
             <Events>
               <Events.Day>Wednesday</Events.Day>

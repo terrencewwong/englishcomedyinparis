@@ -25,6 +25,25 @@ export default function IndexPage() {
           lines={[1, 5, 8]}
         />
         <ComedyEvent
+          facebook="https://www.facebook.com/funnymonkParis/"
+          image={images.funnyMonkComedyShow}
+          when="Tuesdays 8:00pm - 10:00pm"
+          name="Funny Monk Comedy Show"
+          arrondissement={5}
+          where="Monk La Taverne de Cluny"
+          whereHref="https://goo.gl/maps/B7shTfM4y5FyFaTj9"
+          metros={[
+            {
+              name: "Saint-Michel Notre-Dame",
+              lines: [4],
+            },
+            {
+              name: "Cluny - La Sorbonne",
+              lines: [10],
+            },
+          ]}
+        />
+        <ComedyEvent
           facebook="https://www.facebook.com/FFComedy/"
           image={images.frenchFriedComedyNight}
           when="Tuesdays 9:15pm - 10:30pm"
@@ -248,6 +267,12 @@ function useImages() {
 
       theComedyCroissant: file(
         relativePath: { eq: "the-comedy-croissant.png" }
+      ) {
+        ...imageFragment
+      }
+
+      funnyMonkComedyShow: file(
+        relativePath: { eq: "funny-monk-comedy-show.png" }
       ) {
         ...imageFragment
       }
