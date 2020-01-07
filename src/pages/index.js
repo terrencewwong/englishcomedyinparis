@@ -26,6 +26,7 @@ export default function IndexPage() {
         />
         <ComedyEvent
           facebook="https://www.facebook.com/funnymonkParis/"
+          instagram="https://www.instagram.com/funnymonkparis/"
           image={images.funnyMonkComedyShow}
           when="Tuesdays 8:00pm - 10:00pm"
           name="Funny Monk Comedy Show"
