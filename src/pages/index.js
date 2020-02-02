@@ -181,22 +181,6 @@ export default function IndexPage() {
           metro="Gare d'Austerlitz"
           lines={[5, 10]}
         />
-        <ComedyEvent
-          facebook="https://www.facebook.com/comedylabparis/"
-          instagram="https://www.instagram.com/comedylabparis/"
-          image={images.comedyLab}
-          when="Every other Saturday 8:00pm - 9:30pm starting Nov. 30"
-          name="Comedy Lab Generator"
-          arrondissement={10}
-          where="Generator Hostel"
-          whereHref="https://goo.gl/maps/C6vknFHvG3egLbLGA"
-          metros={[
-            {
-              name: "Colonel Fabien",
-              lines: [2],
-            },
-          ]}
-        />
       </Day>
       <Day name="Sunday">
         <ComedyEvent
