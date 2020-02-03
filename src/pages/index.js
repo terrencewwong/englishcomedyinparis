@@ -103,16 +103,6 @@ export default function IndexPage() {
           metro="Marcadet - Poissonniers"
           lines={[4, 12]}
         />
-        <ComedyEvent
-          image={images.oscarFunnyCrew}
-          when="Thursdays 9:30pm - 10:30pm"
-          name="Oscar Funny Crew"
-          arrondissement={2}
-          where="Café Oscar"
-          whereHref="https://goo.gl/maps/cem3JcWbsjWxTnQN9"
-          metro="Grands Boulevards"
-          lines={[8, 9]}
-        />
       </Day>
       <Day name="Friday">
         <ComedyEvent
@@ -243,10 +233,6 @@ function useImages() {
       theNewYorkComedyNight: file(
         relativePath: { eq: "the-new-york-comedy-night.png" }
       ) {
-        ...imageFragment
-      }
-
-      oscarFunnyCrew: file(relativePath: { eq: "oscar-funny-crew.jpg" }) {
         ...imageFragment
       }
 
