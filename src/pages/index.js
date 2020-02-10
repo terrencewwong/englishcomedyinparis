@@ -67,6 +67,17 @@ export default function IndexPage() {
           metro="Saint-Michel Notre-Dame"
           lines={[4]}
         />
+        <ComedyEvent
+          instagram="https://www.instagram.com/comedy_breakfast/"
+          image={images.comedyForBreakfast}
+          when="Every Tuesday 10:00pm - 12:00am"
+          name="Comedy For Breakfast Variety Night"
+          arrondissement={10}
+          where="The Breakfast Club"
+          whereHref="https://goo.gl/maps/Htw1rz2kH4Zr8Wda6"
+          metro="Strasbourg Saint-Denis"
+          lines={[4, 8, 9]}
+        />
       </Day>
       <Day name="Wednesday">
         <ComedyEvent
@@ -244,6 +255,12 @@ function useImages() {
 
       funnyMonkComedyShow: file(
         relativePath: { eq: "funny-monk-comedy-show.png" }
+      ) {
+        ...imageFragment
+      }
+
+      comedyForBreakfast: file(
+        relativePath: { eq: "comedy-for-breakfast.jpg" }
       ) {
         ...imageFragment
       }
