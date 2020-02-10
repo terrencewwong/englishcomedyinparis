@@ -52,6 +52,9 @@ export default function PerformInParisPage() {
               <Events.ContactLink href="https://m.me/funnymonkParis">
                 Funny Monk Comedy Show
               </Events.ContactLink>
+              <Events.ContactLink href="https://www.instagram.com/comedy_breakfast/">
+                Comedy For Breakfast
+              </Events.ContactLink>
             </Events>
             <Events>
               <Events.Day>Wednesday</Events.Day>
@@ -84,12 +87,6 @@ export default function PerformInParisPage() {
                 French Fried Comedy Night
               </Events.ContactLink>
               <p>Signup via email</p>
-            </Events>
-            <Events>
-              <Events.Day>Thursday</Events.Day>
-              <Events.ContactLink href="https://m.me/oscarfunnycrew/">
-                Oscar Funny Crew
-              </Events.ContactLink>
             </Events>
             <Events>
               <Events.Day>Friday</Events.Day>
