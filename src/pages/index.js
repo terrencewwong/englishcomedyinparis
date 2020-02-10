@@ -70,7 +70,7 @@ export default function IndexPage() {
         <ComedyEvent
           instagram="https://www.instagram.com/comedy_breakfast/"
           image={images.comedyForBreakfast}
-          when="Every Tuesday 10:00pm - 12:00am"
+          when="Tuesdays 10:00pm - 12:00am starting Feb. 18"
           name="Comedy For Breakfast Variety Night"
           arrondissement={10}
           where="The Breakfast Club"
@@ -106,7 +106,7 @@ export default function IndexPage() {
           facebook="https://www.facebook.com/thecomedycroissant/"
           instagram="https://www.instagram.com/thecomedycroissant/"
           image={images.theComedyCroissant}
-          when="Select Thursdays 8:00pm - 10:00pm next show Dec. 12"
+          when="Every Other Thursday 8:00pm - 10:00pm"
           name="The Comedy Croissant Open Mic"
           arrondissement={18}
           where={<>Aux&nbsp;Chiffons</>}
