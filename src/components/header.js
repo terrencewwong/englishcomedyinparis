@@ -6,7 +6,7 @@ import React from "react"
 const Header = ({ fluid, siteTitle }) => (
   <header
     css={css`
-      background-color: #5499c7;
+      background-color: #5370c6;
     `}
   >
     <div
