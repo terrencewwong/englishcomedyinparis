@@ -42,6 +42,9 @@ export default function PerformInParisPage() {
           <div>
             <h2>Open Mics</h2>
             <Events>
+              <Events.Day>Monday</Events.Day>
+              <li>Broken Word</li>
+              <p>Sign up on the night from 8pm</p>
               <Events.Day>Tuesday</Events.Day>
               <Events.ContactLink href="https://m.me/ComedyTimeBootlegBar">
                 Comedy Time
