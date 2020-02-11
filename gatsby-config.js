@@ -4,6 +4,7 @@ module.exports = {
     description: `Every English comedy event in Paris all in one place.`,
     author: `Terrence Wong`,
     image: "/favicon.png",
+    siteUrl: "https://englishcomedyinparis.com/",
   },
   plugins: [
     `gatsby-plugin-sitemap`,
