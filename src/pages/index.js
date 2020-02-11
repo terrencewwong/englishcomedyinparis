@@ -256,7 +256,7 @@ function useImages() {
         ...imageFragment
       }
 
-      wildOpenMic: file(relativePath: { eq: "wild-open-mic.jpg" }) {
+      wildOpenMic: file(relativePath: { eq: "wild-open-mic.png" }) {
         ...imageFragment
       }
 
