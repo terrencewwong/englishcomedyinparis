@@ -2,14 +2,14 @@
 
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="22" width="22" y="-1" x="-1"/>
+  <rect fill="none"  height="22" width="22" y="-1" x="-1"/>
  </g>
  <g>
   <title>Layer 1</title>
-  <g stroke="null" id="svg_1">
-   <g stroke="null" id="svg_2">
-    <circle stroke="null" id="svg_3" fill-rule="evenodd" clip-rule="evenodd" fill="#A0006E" r="9.987456" cy="9.987456" cx="9.987456"/>
-    <path stroke="null" id="svg_4" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="m13.558188,13.261822l0,-1.718277l-1.359162,0l0,-7.014668l-2.81212,0l-4.280276,6.686385l0,2.04656l4.967674,0l0,2.296463l2.124723,0l0,-2.296463l1.359162,0zm-3.483885,-1.718277l-3.077439,0l2.249566,-3.530783c0.437494,-0.687398 0.749928,-1.359162 0.796825,-1.546536l0.031048,0l0,5.077319z"/>
+  <g stroke="null" >
+   <g stroke="null" >
+    <circle stroke="null"  fill-rule="evenodd" clip-rule="evenodd" fill="#A0006E" r="9.987456" cy="9.987456" cx="9.987456"/>
+    <path stroke="null"  fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="m13.558188,13.261822l0,-1.718277l-1.359162,0l0,-7.014668l-2.81212,0l-4.280276,6.686385l0,2.04656l4.967674,0l0,2.296463l2.124723,0l0,-2.296463l1.359162,0zm-3.483885,-1.718277l-3.077439,0l2.249566,-3.530783c0.437494,-0.687398 0.749928,-1.359162 0.796825,-1.546536l0.031048,0l0,5.077319z"/>
    </g>
   </g>
  </g>
