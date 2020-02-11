@@ -52,6 +52,7 @@ export default function ComedyEvent({
     >
       <Img
         fixed={image.childImageSharp.fixed}
+        alt={name + " " + "logo"}
         css={css`
           margin-bottom: 16px;
           flex-shrink: 0;
