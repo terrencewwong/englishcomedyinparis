@@ -89,7 +89,7 @@ export default function IndexPage() {
         <ComedyEvent
           instagram="https://www.instagram.com/comedy_breakfast/"
           image={images.comedyForBreakfast}
-          when="Tuesdays 9:00pm - 12:00am starting Feb. 18"
+          when="Tuesdays 9:00pm - 12:00am starting Feb. 25"
           name="Comedy For Breakfast Variety Night"
           arrondissement={10}
           where="The Breakfast Club"
