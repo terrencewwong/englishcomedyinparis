@@ -23,7 +23,7 @@ export default function IndexPage() {
           whereHref="https://goo.gl/maps/auYup2EpPtRoiSZv7"
           metros={[
             {
-              name: "Montparnesse",
+              name: "Montparnasse",
               lines: [4, 6, 12, 13],
             },
           ]}
