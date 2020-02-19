@@ -11,6 +11,24 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title="English Comedy in Paris" />
+      <Day name="Featured Events">
+        <ComedyEvent
+          facebook="https://www.facebook.com/events/3216911261713011/"
+          instagram="https://www.instagram.com/festivaldhumourdeparis/"
+          image={images.greenCard}
+          when="Saturday 8:00pm Mar. 14"
+          name="Green Card"
+          arrondissement={15}
+          where="Le Grand Point Virgule"
+          whereHref="https://goo.gl/maps/auYup2EpPtRoiSZv7"
+          metros={[
+            {
+              name: "Montparnesse",
+              lines: [4, 6, 12, 13],
+            },
+          ]}
+        />
+      </Day>
       <Day name="Monday">
         <ComedyEvent
           image={images.brokenWord}
@@ -293,6 +311,10 @@ function useImages() {
       }
 
       brokenWord: file(relativePath: { eq: "broken-word.png" }) {
+        ...imageFragment
+      }
+
+      greenCard: file(relativePath: { eq: "green-card.jpg" }) {
         ...imageFragment
       }
     }
