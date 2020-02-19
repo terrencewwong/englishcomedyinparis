@@ -32,7 +32,7 @@ export default function IndexPage() {
       <Day name="Monday">
         <ComedyEvent
           image={images.brokenWord}
-          when="Mondays 8:00pm - 10:00pm starting Mar. 2"
+          when="Mondays 8:00pm - 10:00pm starting Mar. 2 (no show Mar. 16)"
           name="Broken Word"
           arrondissement={20}
           where="Culture Rapide"
