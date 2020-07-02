@@ -1,6 +1,6 @@
 import React from "react"
 
-const SvgMetro11 = props => (
+const SvgMetro11 = ({ cancelled, ...props }) => (
   <svg width={20} height={20} {...props}>
     <style>
       {".metro-11_svg__st1{fill-rule:evenodd;clip-rule:evenodd;fill:#fff}"}
@@ -16,7 +16,7 @@ const SvgMetro11 = props => (
             cx={10.009}
             fillRule="evenodd"
             clipRule="evenodd"
-            fill="#6e491e"
+            fill={`rgba(110, 73, 30, ${cancelled ? 0.4 : 1})`}
           />
           <path
             stroke="null"

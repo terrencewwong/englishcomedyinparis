@@ -48,6 +48,7 @@ const Header = ({ fluid, siteTitle }) => (
       >
         <NavLink to="/map">Map</NavLink>
         <NavLink to="/perform-in-paris">Perform in Paris</NavLink>
+        <NavLink to="/all-events">All Events</NavLink>
       </nav>
     </div>
   </header>

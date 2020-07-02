@@ -11,22 +11,25 @@ import Metro10 from "./Metro10"
 import Metro11 from "./Metro11"
 import Metro12 from "./Metro12"
 import Metro13 from "./Metro13"
+import Metro14 from "./Metro14"
 
 const metros = {
-  1: <Metro1 />,
-  2: <Metro2 />,
-  3: <Metro3 />,
-  4: <Metro4 />,
-  5: <Metro5 />,
-  6: <Metro6 />,
-  8: <Metro8 />,
-  9: <Metro9 />,
-  10: <Metro10 />,
-  11: <Metro11 />,
-  12: <Metro12 />,
-  13: <Metro13 />,
+  1: Metro1,
+  2: Metro2,
+  3: Metro3,
+  4: Metro4,
+  5: Metro5,
+  6: Metro6,
+  8: Metro8,
+  9: Metro9,
+  10: Metro10,
+  11: Metro11,
+  12: Metro12,
+  13: Metro13,
+  14: Metro14,
 }
 
-export default function Metro({ line }) {
-  return metros[line]
+export default function Metro({ line, cancelled }) {
+  const Component = metros[line]
+  return <Component cancelled={cancelled} />
 }

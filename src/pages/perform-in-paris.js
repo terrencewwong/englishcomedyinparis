@@ -71,6 +71,9 @@ export default function PerformInParisPage() {
               <Events.ContactLink href="https://m.me/thecomedycroissant">
                 The Comedy Croissant
               </Events.ContactLink>
+              <Events.ContactLink href="https://www.instagram.com/erikbuell.fr/">
+                Open Air Comedy
+              </Events.ContactLink>
             </Events>
             <Events>
               <Events.Day>Saturday</Events.Day>
