@@ -43,16 +43,16 @@ export default function IndexPage() {
       <Day name="Tuesday">
         <ComedyTime />
         <FunnyMonk />
-        <FrenchFriedComedy />
+        <OpenAirComedy />
         <Coucou />
         <ComedyForBreakfast />
+        <FrenchFriedComedy />
       </Day>
       <Day name="Wednesday">
         <ComedyLabWednesday />
       </Day>
       <Day name="Thursday">
         <Croissant />
-        <OpenAirComedy />
       </Day>
       <Day name="Friday">
         <LibertyEgality />
