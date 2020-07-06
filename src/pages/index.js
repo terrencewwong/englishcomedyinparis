@@ -18,8 +18,8 @@ export default function IndexPage() {
       </Day> */}
       <h3>Due to COVID many events are not running, but these events are!</h3>
       <Day name="Tuesday">
-        <FrenchFriedComedy />
         <OpenAirComedy />
+        <FrenchFriedComedy />
       </Day>
       <Day name="Saturday">
         <WildOpenMic />
