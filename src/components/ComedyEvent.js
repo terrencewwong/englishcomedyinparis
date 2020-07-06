@@ -342,7 +342,7 @@ export function OpenAirComedy() {
   return (
     <ComedyEvent
       image={images.openAirComedy}
-      when="Thursdays 8:00pm - 9:30pm"
+      when="Tuesdays 8:00pm - 9:30pm (next show July 14)"
       name="Open Air Comedy"
       arrondissement={12}
       where="Le Mazette"
