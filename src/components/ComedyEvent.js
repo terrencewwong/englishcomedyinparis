@@ -7,6 +7,8 @@ import MapMarker from "./MapMarker"
 import Facebook from "./Facebook"
 import Instagram from "./Instagram"
 import MetroM20px from "./MetroM20px"
+import RERIcon from "./RERIcon"
+import RER from "./RER"
 import Metro from "./Metro"
 import "./ComedyEvent.css"
 
@@ -231,7 +233,7 @@ function Social({ href, name, Icon }) {
   )
 }
 
-function MetroStation({ name, lines, cancelled }) {
+function MetroStation({ name, lines, cancelled, rers }) {
   return (
     <h4
       css={css`
@@ -257,6 +259,14 @@ function MetroStation({ name, lines, cancelled }) {
         {lines.map(line => (
           <Metro line={line} cancelled={cancelled} />
         ))}
+        {rers && (
+          <>
+            <RERIcon />
+            {rers.map(line => (
+              <RER line={line} />
+            ))}
+          </>
+        )}
       </div>
       <div
         css={css`
@@ -347,8 +357,13 @@ export function OpenAirComedy() {
       arrondissement={12}
       where="Le Mazette"
       whereHref="https://g.page/Le-Mazette?share"
-      metro="Gare de Lyon"
-      lines={[1, 14]}
+      metros={[
+        {
+          name: "Gare de Lyon",
+          lines: [1, 14],
+          rers: ["A", "D"]
+        }
+      ]}
     />
   )
 }
