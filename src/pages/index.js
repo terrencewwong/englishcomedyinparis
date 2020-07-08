@@ -6,6 +6,7 @@ import {
   GreatBritish,
   NewYorkComedyNight,
   OpenAirComedy,
+  ComedyLabWednesday,
 } from "../components/ComedyEvent"
 import SEO from "../components/seo"
 import Day from "../components/Day"
@@ -20,6 +21,9 @@ export default function IndexPage() {
       <Day name="Tuesday">
         <OpenAirComedy />
         <FrenchFriedComedy />
+      </Day>
+      <Day name="Wednesday">
+        <ComedyLabWednesday/>
       </Day>
       <Day name="Saturday">
         <WildOpenMic />

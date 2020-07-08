@@ -17,6 +17,7 @@ export default function ComedyEvent({
   instagram,
   image,
   when,
+  whenDetails,
   name,
   arrondissement,
   where,
@@ -108,6 +109,16 @@ export default function ComedyEvent({
         >
           {when}
         </h3>
+        {whenDetails && (
+        <h4
+          css={css`
+            font-size: 18px;
+            line-height: 28px;
+          `}
+        >
+          {whenDetails}
+        </h4>
+        )}
         <h4
           css={css`
             font-size: 32px;
@@ -479,12 +490,12 @@ export function ComedyLabWednesday() {
   const images = useImages()
   return (
     <ComedyEvent
-      cancelled
       facebook="https://www.facebook.com/comedylabparis/"
       instagram="https://www.instagram.com/comedylabparis/"
       image={images.comedyLab}
-      when="Wednesdays 8:30pm - 10:30pm"
-      name="Comedy Lab Open Mic"
+      when="Wednesdays 8:00pm - 9:00pm (next show July 15)"
+      whenDetails="second show 9:00pm - 10:00pm if first show is sold out"
+      name="Comedy Lab"
       arrondissement={11}
       where="Au Chat Noir"
       whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
