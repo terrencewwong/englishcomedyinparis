@@ -494,7 +494,7 @@ export function ComedyLabWednesday() {
       instagram="https://www.instagram.com/comedylabparis/"
       image={images.comedyLab}
       when="Wednesdays 8:00pm - 9:00pm (next show July 15)"
-      whenDetails="second show 9:00pm - 10:00pm if first show is sold out"
+      whenDetails="second show 9:00pm - 10:00pm if first show is over capacity"
       name="Comedy Lab"
       arrondissement={11}
       where="Au Chat Noir"
