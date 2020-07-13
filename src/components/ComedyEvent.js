@@ -364,7 +364,7 @@ export function OpenAirComedy() {
     <ComedyEvent
       facebook="https://www.facebook.com/Open-Air-Comedy-112378913878838/"
       image={images.openAirComedy}
-      when="Tuesdays 8:00pm - 9:30pm (next show July 14)"
+      when="Tuesdays 8:00pm - 9:30pm"
       name="Open Air Comedy"
       arrondissement={12}
       where="Le Mazette"
@@ -494,7 +494,7 @@ export function ComedyLabWednesday() {
       facebook="https://www.facebook.com/comedylabparis/"
       instagram="https://www.instagram.com/comedylabparis/"
       image={images.comedyLab}
-      when="Wednesdays 8:00pm - 9:00pm (next show July 15)"
+      when="Wednesdays 8:00pm - 9:00pm"
       whenDetails="second show 9:00pm - 10:00pm if first show is over capacity"
       name="Comedy Lab"
       arrondissement={11}
