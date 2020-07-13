@@ -362,6 +362,7 @@ export function OpenAirComedy() {
   const images = useImages()
   return (
     <ComedyEvent
+      facebook="https://www.facebook.com/Open-Air-Comedy-112378913878838/"
       image={images.openAirComedy}
       when="Tuesdays 8:00pm - 9:30pm (next show July 14)"
       name="Open Air Comedy"
