@@ -363,6 +363,7 @@ export function OpenAirComedy() {
   return (
     <ComedyEvent
       facebook="https://www.facebook.com/Open-Air-Comedy-112378913878838/"
+      instagram="https://www.instagram.com/openaircomedy/"
       image={images.openAirComedy}
       when="Tuesdays 8:00pm - 9:30pm"
       name="Open Air Comedy"
