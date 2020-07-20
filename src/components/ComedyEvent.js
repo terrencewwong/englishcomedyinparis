@@ -519,6 +519,38 @@ export function ComedyLabWednesday() {
   )
 }
 
+export function ComedyLabFriday() {
+  const images = useImages()
+  return (
+    <ComedyEvent
+      facebook="https://www.facebook.com/comedylabparis/"
+      instagram="https://www.instagram.com/comedylabparis/"
+      image={images.comedyLab}
+      when="Fridays 8:00pm - 9:00pm"
+      whenDetails="second show 9:00pm - 10:00pm if first show is over capacity"
+      name="Comedy Lab"
+      arrondissement={11}
+      where="Au Chat Noir"
+      whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
+      metros={[
+        {
+          name: "Parmentier",
+          lines: [3],
+        },
+        {
+          name: "Couronnes",
+          lines: [2],
+        },
+        {
+          name: "Oberkampf",
+          lines: [5, 9],
+        },
+      ]}
+    />
+  )
+}
+
+
 export function Croissant() {
   const images = useImages()
   return (
@@ -552,37 +584,6 @@ export function LibertyEgality() {
       whereHref="https://goo.gl/maps/UHCmm5oLGAjNq7fT6"
       metro="Bastille"
       lines={[1, 5, 8]}
-    />
-  )
-}
-
-export function ComedyLabFriday() {
-  const images = useImages()
-  return (
-    <ComedyEvent
-      cancelled
-      facebook="https://www.facebook.com/comedylabparis/"
-      instagram="https://www.instagram.com/comedylabparis/"
-      image={images.comedyLab}
-      when="Fridays 9:30pm - 11:00pm"
-      name="Comedy Lab Comedy Show"
-      arrondissement={11}
-      where="Au Chat Noir"
-      whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
-      metros={[
-        {
-          name: "Parmentier",
-          lines: [3],
-        },
-        {
-          name: "Couronnes",
-          lines: [2],
-        },
-        {
-          name: "Oberkampf",
-          lines: [5, 9],
-        },
-      ]}
     />
   )
 }

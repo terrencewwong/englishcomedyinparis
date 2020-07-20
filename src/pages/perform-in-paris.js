@@ -61,8 +61,8 @@ export default function PerformInParisPage() {
             </Events>
             <Events>
               <Events.Day>Wednesday</Events.Day>
-              <Events.ContactLink href="https://forms.gle/hMJiazVvVm6t85N28">
-                Comedy Lab Open Mic
+              <Events.ContactLink href="https://forms.gle/pG13vTXjPWGetFs49">
+                Comedy Lab
               </Events.ContactLink>
               <p>Signup with Google Forms</p>
             </Events>
@@ -96,9 +96,10 @@ export default function PerformInParisPage() {
             </Events>
             <Events>
               <Events.Day>Friday</Events.Day>
-              <Events.ContactLink href="https://m.me/comedylabparis/">
-                Comedy Lab Comedy Show
+              <Events.ContactLink href="https://forms.gle/pG13vTXjPWGetFs49">
+                Comedy Lab (it's the same signup form as Comedy Lab Wednesday)
               </Events.ContactLink>
+              <p>Signup with Google Forms</p>
               <Events.ContactLink href="https://m.me/libertyegalitycomedy/">
                 Liberty Egality Comedy
               </Events.ContactLink>

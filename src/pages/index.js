@@ -23,7 +23,10 @@ export default function IndexPage() {
         <FrenchFriedComedy />
       </Day>
       <Day name="Wednesday">
-        <ComedyLabWednesday/>
+        <ComedyLabWednesday />
+      </Day>
+      <Day name="Friday">
+        <ComedyLabFriday />
       </Day>
       <Day name="Saturday">
         <WildOpenMic />
