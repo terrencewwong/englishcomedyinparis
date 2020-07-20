@@ -497,7 +497,7 @@ export function ComedyLabWednesday() {
       image={images.comedyLab}
       when="Wednesdays 8:00pm - 9:00pm"
       whenDetails="second show 9:00pm - 10:00pm if first show is over capacity"
-      name="Comedy Lab"
+      name="Comedy Lab Wednesday"
       arrondissement={11}
       where="Au Chat Noir"
       whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
@@ -528,7 +528,7 @@ export function ComedyLabFriday() {
       image={images.comedyLab}
       when="Fridays 8:00pm - 9:00pm"
       whenDetails="second show 9:00pm - 10:00pm if first show is over capacity"
-      name="Comedy Lab"
+      name="Comedy Lab Friday"
       arrondissement={11}
       where="Au Chat Noir"
       whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
