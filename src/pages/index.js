@@ -7,6 +7,7 @@ import {
   NewYorkComedyNight,
   OpenAirComedy,
   ComedyLabWednesday,
+  ComedyLabFriday,
 } from "../components/ComedyEvent"
 import SEO from "../components/seo"
 import Day from "../components/Day"
