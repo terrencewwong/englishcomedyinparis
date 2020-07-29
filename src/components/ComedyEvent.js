@@ -294,6 +294,7 @@ export function FrenchFriedComedy() {
   const images = useImages()
   return (
     <ComedyEvent
+      cancelled
       facebook="https://www.facebook.com/FFComedy/"
       image={images.frenchFriedComedyNight}
       when="Tuesdays 11:00pm - 12:00am"

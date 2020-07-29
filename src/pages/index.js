@@ -21,7 +21,6 @@ export default function IndexPage() {
       <h3>Due to COVID many events are not running, but these events are!</h3>
       <Day name="Tuesday">
         <OpenAirComedy />
-        <FrenchFriedComedy />
       </Day>
       <Day name="Wednesday">
         <ComedyLabWednesday />
