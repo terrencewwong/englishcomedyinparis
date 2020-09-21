@@ -644,6 +644,28 @@ export function JuicyPunchline() {
   )
 }
 
+export function ComedyFunhouse() {
+  const images = useImages()
+  return (
+    <ComedyEvent
+      facebook="https://www.facebook.com/ComedyFunHouseParis"
+      instagram="https://www.instagram.com/comedy.funhouse/"
+      image={images.comedyFunhouse}
+      when="Sundays 8:30pm - 10:00pm"
+      name="Comedy Funhouse"
+      arrondissement={20}
+      where="Court-Circuit"
+      whereHref="https://g.page/courtcircuitbar?share"
+      metros={[
+        {
+          name: "Gambetta",
+          lines: [3],
+        },
+      ]}
+    />
+  )
+}
+
 function useImages() {
   return useStaticQuery(graphql`
     query {
@@ -726,6 +748,10 @@ function useImages() {
       }
 
       juicyPunchline: file(relativePath: { eq: "juicy-punchline.png" }) {
+        ...imageFragment
+      }
+
+      comedyFunhouse: file(relativePath: { eq: "comedy-funhouse.png" }) {
         ...imageFragment
       }
 
