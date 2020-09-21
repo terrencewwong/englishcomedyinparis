@@ -604,7 +604,7 @@ export function ComedyCave() {
     <ComedyEvent
       facebook="https://www.facebook.com/comedycave.fr/"
       image={images.comedyCave}
-      when="Every Monday 7:45pm - 9:30pm"
+      when="Mondays 7:45pm - 9:30pm"
       name="Comedy Cave"
       arrondissement={3}
       where="Le Carlie"
@@ -629,7 +629,7 @@ export function JuicyPunchline() {
     <ComedyEvent
       facebook="https://www.facebook.com/ParisPunchlineComedy/"
       image={images.juicyPunchline}
-      when="Every Tuesday 9:00pm - 10:30pm"
+      when="Tuesdays 9:00pm - 10:30pm"
       name="The Juicy Punchline"
       arrondissement={20}
       where="The Juicy Pop"
