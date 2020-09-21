@@ -11,6 +11,7 @@ import {
   ComedyCave,
   JuicyPunchline,
   ComedyFunhouse,
+  UnstableComedy,
 } from "../components/ComedyEvent"
 import SEO from "../components/seo"
 import Day from "../components/Day"
@@ -38,6 +39,7 @@ export default function IndexPage() {
       </Day>
       <Day name="Sunday">
         <NewYorkComedyNight />
+        <UnstableComedy />
         <ComedyFunhouse />
       </Day>
     </Layout>

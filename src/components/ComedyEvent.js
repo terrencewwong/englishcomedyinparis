@@ -611,7 +611,7 @@ export function ComedyCave() {
       whereHref="https://g.page/LeCarlie?share"
       metros={[
         {
-          name: "Etienne Marcel",
+          name: "Étienne Marcel",
           lines: [4],
         },
         {
@@ -638,6 +638,32 @@ export function JuicyPunchline() {
         {
           name: "Jourdain",
           lines: [11],
+        },
+      ]}
+    />
+  )
+}
+
+export function UnstableComedy() {
+  const images = useImages()
+  return (
+    <ComedyEvent
+      facebook="https://www.facebook.com/unstablecomedyparis/"
+      instagram="https://www.instagram.com/unstablecomedy/"
+      image={images.unstableComedy}
+      when="Sundays 7:00pm - 8:30pm"
+      name="Unstable Comedy"
+      arrondissement={2}
+      where="Les Ecuries"
+      whereHref="https://goo.gl/maps/unHojcpWcvapA6U19"
+      metros={[
+        {
+          name: "Sentier",
+          lines: [3],
+        },
+        {
+          name: "Étienne Marcel",
+          lines: [4],
         },
       ]}
     />
@@ -755,6 +781,9 @@ function useImages() {
         ...imageFragment
       }
 
+      unstableComedy: file(relativePath: { eq: "unstable-comedy.png" }) {
+        ...imageFragment
+      }
     }
 
     fragment imageFragment on File {
