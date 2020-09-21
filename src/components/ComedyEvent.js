@@ -499,21 +499,14 @@ export function ComedyLabWednesday() {
       when="Wednesdays 8:00pm - 9:00pm"
       name="Comedy Lab Wednesday"
       arrondissement={11}
-      where="Au Chat Noir"
-      whereHref="https://goo.gl/maps/87zK9ChdPyDr79gKA"
+      where="Le Mazette"
+      whereHref="https://g.page/Le-Mazette?share"
       metros={[
         {
-          name: "Parmentier",
-          lines: [3],
-        },
-        {
-          name: "Couronnes",
-          lines: [2],
-        },
-        {
-          name: "Oberkampf",
-          lines: [5, 9],
-        },
+          name: "Gare de Lyon",
+          lines: [1, 14],
+          rers: ["A", "D"]
+        }
       ]}
     />
   )
@@ -605,6 +598,52 @@ export function JokeOrCroak() {
   )
 }
 
+export function ComedyCave() {
+  const images = useImages()
+  return (
+    <ComedyEvent
+      facebook="https://www.facebook.com/comedycave.fr/"
+      image={images.comedyCave}
+      when="Every Monday 7:45pm - 9:30pm"
+      name="Comedy Cave"
+      arrondissement={3}
+      where="Le Carlie"
+      whereHref="https://g.page/LeCarlie?share"
+      metros={[
+        {
+          name: "Etienne Marcel",
+          lines: [4],
+        },
+        {
+          name: "Rambuteau",
+          lines: [11],
+        },
+      ]}
+    />
+  )
+}
+
+export function JuicyPunchline() {
+  const images = useImages()
+  return (
+    <ComedyEvent
+      facebook="https://www.facebook.com/ParisPunchlineComedy/"
+      image={images.juicyPunchline}
+      when="Every Tuesday 9:00pm - 10:30pm"
+      name="The Juicy Punchline"
+      arrondissement={20}
+      where="The Juicy Pop"
+      whereHref="https://goo.gl/maps/55AaDap3W7vs2tou6"
+      metros={[
+        {
+          name: "Jourdain",
+          lines: [11],
+        },
+      ]}
+    />
+  )
+}
+
 function useImages() {
   return useStaticQuery(graphql`
     query {
@@ -681,6 +720,15 @@ function useImages() {
       openAirComedy: file(relativePath: { eq: "open-air-comedy.png" }) {
         ...imageFragment
       }
+
+      comedyCave: file(relativePath: { eq: "comedy-cave.png" }) {
+        ...imageFragment
+      }
+
+      juicyPunchline: file(relativePath: { eq: "juicy-punchline.jpg" }) {
+        ...imageFragment
+      }
+
     }
 
     fragment imageFragment on File {

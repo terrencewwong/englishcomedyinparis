@@ -8,6 +8,8 @@ import {
   OpenAirComedy,
   ComedyLabWednesday,
   ComedyLabFriday,
+  ComedyCave,
+  JuicyPunchline,
 } from "../components/ComedyEvent"
 import SEO from "../components/seo"
 import Day from "../components/Day"
@@ -19,14 +21,15 @@ export default function IndexPage() {
       {/* <Day name="Featured Events">
       </Day> */}
       <h3>Due to COVID many events are not running, but these events are!</h3>
+      <Day name="Monday">
+        <ComedyCave />
+      </Day>
       <Day name="Tuesday">
         <OpenAirComedy />
+        <JuicyPunchline />
       </Day>
       <Day name="Wednesday">
         <ComedyLabWednesday />
-      </Day>
-      <Day name="Friday">
-        <ComedyLabFriday />
       </Day>
       <Day name="Saturday">
         <WildOpenMic />
