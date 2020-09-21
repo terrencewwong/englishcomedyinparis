@@ -725,7 +725,7 @@ function useImages() {
         ...imageFragment
       }
 
-      juicyPunchline: file(relativePath: { eq: "juicy-punchline.jpg" }) {
+      juicyPunchline: file(relativePath: { eq: "juicy-punchline.png" }) {
         ...imageFragment
       }
 
