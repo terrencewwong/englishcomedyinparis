@@ -497,7 +497,7 @@ export function ComedyLabWednesday() {
       instagram="https://www.instagram.com/comedylabparis/"
       image={images.comedyLab}
       when="Wednesdays 8:00pm - 9:00pm"
-      name="Comedy Lab Wednesday"
+      name="Comedy Lab @ Le Mazette"
       arrondissement={11}
       where="Le Mazette"
       whereHref="https://g.page/Le-Mazette?share"
