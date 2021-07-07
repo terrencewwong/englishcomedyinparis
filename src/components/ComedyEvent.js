@@ -211,7 +211,7 @@ export default function ComedyEvent({
 }
 
 Social.Facebook = function SocialFacebook({ href }) {
-  return <Social href={href} name="Facebook" Icon={Facebook} />
+  return <Social href={href} name="Event Link" Icon={Facebook} />
 }
 Social.Instagram = function SocialInstagram({ href }) {
   return <Social href={href} name="Instagram" Icon={Instagram} />
