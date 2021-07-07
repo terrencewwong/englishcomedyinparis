@@ -99,7 +99,7 @@ export default function ComedyEvent({
           }
         `}
       >
-        <h3
+        {/* <h3
           css={css`
             color: rgba(0, 0, 0, 0.6);
             font-weight: bold;
@@ -108,7 +108,7 @@ export default function ComedyEvent({
           `}
         >
           {when}
-        </h3>
+        </h3> */}
         {whenDetails && (
         <h4
           css={css`
@@ -325,11 +325,11 @@ export function WildOpenMic() {
   )
 }
 
-export function GreatBritish() {
+export function GreatBritish({ eventLink }) {
   const images = useImages()
   return (
     <ComedyEvent
-      facebook="https://www.facebook.com/GBACN/"
+      facebook={eventLink}
       image={images.theGreatBritishAmericanComedyNight}
       when="Saturdays 7:00pm - 8:30pm"
       name="Great British American Comedy Night"
@@ -342,11 +342,11 @@ export function GreatBritish() {
   )
 }
 
-export function NewYorkComedyNight() {
+export function NewYorkComedyNight({ eventLink }) {
   const images = useImages()
   return (
     <ComedyEvent
-      facebook="https://www.facebook.com/NewYorkComedyNight/"
+      facebook={eventLink}
       image={images.theNewYorkComedyNight}
       when="Sundays 6:00pm - 7:30pm and 8:00pm - 9:30pm"
       name="The New York Comedy Night"

@@ -22,14 +22,12 @@ export default function IndexPage() {
       <SEO title="English Comedy in Paris" />
       {/* <Day name="Featured Events">
       </Day> */}
-      <h3>Due to COVID many events are not running, but these events are!</h3>
-      <Day name="Saturday">
-        <WildOpenMic />
-        <GreatBritish />
+      <h2>Upcoming Shows</h2>
+      <Day name="Sat Jul 10 @ 7:00pm - 8:00pm">
+        <GreatBritish eventLink="https://www.facebook.com/events/2489990127814170" />
       </Day>
-      <Day name="Sunday">
-        <NewYorkComedyNight />
-        <UnstableComedy />
+      <Day name="Sun Jul 11 @ 7:00pm - 8:30pm">
+        <NewYorkComedyNight eventLink="https://www.facebook.com/events/173591731341718/" />
       </Day>
     </Layout>
   )

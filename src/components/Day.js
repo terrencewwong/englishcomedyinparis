@@ -2,10 +2,10 @@ import React from "react"
 import { css } from "@emotion/core"
 import "./Day.css"
 
-export default function Day({ name, children }) {
+export default function Day({ name, time, children }) {
   return (
     <div className="Day">
-      <h2>{name}</h2>
+      <h3>{name}</h3>
       {children ? (
         <div className="Day__Events">{children}</div>
       ) : (
