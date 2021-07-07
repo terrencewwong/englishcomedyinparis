@@ -43,17 +43,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Source Serif Pro`,
-            variants: [`400`],
-          },
-          {
-            family: `Raleway`,
-            variants: [`400`, `700`],
-          },
+          `Source Serif Pro\:400`,
+          `Raleway\:400,700`
         ],
       },
     },
