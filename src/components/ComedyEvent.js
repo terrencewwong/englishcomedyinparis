@@ -692,6 +692,30 @@ export function ComedyFunhouse() {
   )
 }
 
+export function DestinationStandUp({ eventLink }) {
+  const images = useImages()
+  return (
+    <ComedyEvent
+      facebook={eventLink}
+      image={images.destinationStandUp}
+      name="Destination Stand Up"
+      arrondissement={2}
+      where="Comédie Dalayrac"
+      whereHref="https://goo.gl/maps/yHkYp4xDK3iarTRW9"
+      metros={[
+        {
+          name: "Quatre Septembre",
+          lines: [3],
+        },
+        {
+          name: "Pyramides",
+          lines: [7, 14],
+        },
+      ]}
+    />
+  )
+}
+
 function useImages() {
   return useStaticQuery(graphql`
     query {
@@ -782,6 +806,10 @@ function useImages() {
       }
 
       unstableComedy: file(relativePath: { eq: "unstable-comedy.png" }) {
+        ...imageFragment
+      }
+
+      destinationStandUp: file(relativePath: { eq: "destination-stand-up.jpg" }) {
         ...imageFragment
       }
     }

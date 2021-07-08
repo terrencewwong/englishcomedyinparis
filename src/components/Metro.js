@@ -5,6 +5,7 @@ import Metro3 from "./Metro3"
 import Metro4 from "./Metro4"
 import Metro5 from "./Metro5"
 import Metro6 from "./Metro6"
+import Metro7 from "./Metro7"
 import Metro8 from "./Metro8"
 import Metro9 from "./Metro9"
 import Metro10 from "./Metro10"
@@ -20,6 +21,7 @@ const metros = {
   4: Metro4,
   5: Metro5,
   6: Metro6,
+  7: Metro7,
   8: Metro8,
   9: Metro9,
   10: Metro10,
