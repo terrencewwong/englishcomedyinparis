@@ -24,9 +24,6 @@ export default function IndexPage() {
       {/* <Day name="Featured Events">
       </Day> */}
       <h2>Upcoming Shows</h2>
-      <Day name="Sun Jul 11 @ 7:00pm - 8:30pm">
-        <NewYorkComedyNight eventLink="https://www.facebook.com/events/173591731341718/" />
-      </Day>
       <Day name="Tue Jul 13 @ 7:30pm - 8:30pm">
         <DestinationStandUp eventLink="https://www.facebook.com/events/234445784779434/" />
       </Day>
