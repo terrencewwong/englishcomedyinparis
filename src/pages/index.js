@@ -28,7 +28,7 @@ export default function IndexPage() {
         <DestinationStandUp eventLink="https://www.facebook.com/events/234445784779434/" />
       </Day>
       <Day name="Sat Jul 17 @ 7:00pm - 8:00pm">
-        <GreatBritish />
+        <GreatBritish eventLink="https://www.facebook.com/events/1771035223088669/" />
       </Day>
       <Day name="Sun Jul 18 @ 7:00pm - 8:30pm">
         <NewYorkComedyNight eventLink="https://www.facebook.com/events/173591721341719/" />
